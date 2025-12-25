@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter pub get:*)",
+      "Bash(cmd /c \"cd /d e:\\\\Study\\\\flutter\\\\chatW\\\\chatw && flutter pub get\")",
+      "Bash(powershell -Command \"Set-Location ''e:\\\\Study\\\\flutter\\\\chatW\\\\chatw''; flutter pub get\")"
+    ]
+  }
+}
