@@ -7,8 +7,6 @@ workflows:
       flutter: stable
       xcode: latest
       cocoapods: default
-      vars:
-        APP_NAME: "chatw"
     scripts:
       - name: Get Flutter packages
         script: |
@@ -23,10 +21,10 @@ workflows:
         script: |
           cd build/ios/iphoneos
           mkdir -p Payload
-          mv Runner.app $APP_NAME.app
-          cp -r $APP_NAME.app Payload/
-          zip -r $APP_NAME.ipa Payload
-          mv $APP_NAME.ipa ../../../
+          mv Runner.app chatw.app
+          cp -r chatw.app Payload/
+          zip -r chatw.ipa Payload
+          mv chatw.ipa ../../../
     artifacts:
       - "*.ipa"
       - build/ios/iphoneos/*.app
